@@ -1,0 +1,18 @@
+變數,Type ,說明,變數.,Type. ,說明.
+barrels08,con.,變數FuelType1 的年度石油消耗量,hpv,con.,後掀式座位容量 cubic feet
+barrelsA08,con.,變數FuelType2 的年度石油消耗量,lv2,con.,2門車車廂容量
+city08U,con.,fueltype1 城市油耗,lv4,con.,4門車車廂容量
+cityA08U,con.,fueltype2 城市油耗,make,cat.,品牌
+co2,con.,fuelType1的排氣量,pv2,con.,2門車座位容量
+co2A,con.,fueltype2的排氣量,pv4,con.,4門車座位容量
+comb08U,con.,fueltype 1 的綜合油耗,trany,cat.,傳動系統種類
+combA08U,con.,fueltype2的綜合油耗,UCity,con.,EPA 統計 fueltype1 城中油耗
+cylinders,con.,汽缸數,UCityA,con.,EPA 統計 fueltype2 城中油耗
+displ,con.,引擎排氣量,UHighway,con.,EPA 統計 fueltype1 高速公路油耗
+drive,cat.,輪軸種類,UHighwayA,con.,EPA 統計 fueltype2 高速公路油耗
+fuelCost08,con.,fuelType1 年花費,VClass,cat.,汽車大小
+fuelCostA08,con.,fuelType 2 年花費,year,cat.,車款年齡
+fuelType1,cat.,主要燃料,fuelType2,cat.,副燃料
+highway08U,con.,fueltype1 高速公路油耗,createdOn,cat.,紀錄時間
+highwayA08U,con.,fueltype2 高速公路油耗,modifiedOn,cat.,上次更新時間
+hlv,con.,後掀式車廂容量 cubic feet,youSaveSpend,con.,5年省下的油錢 (VS average)

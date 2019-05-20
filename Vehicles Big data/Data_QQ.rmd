@@ -1,0 +1,48 @@
+---
+title: "巨量資料分析報告"
+author: "王姿文、林易霆、康益豪、張維翰"
+date: "2019年4月29日"
+output: html_document
+---
+```{r setup, include=F}
+knitr::opts_chunk$set(echo = T)
+library(stringi)
+library(knitr)
+library(kableExtra)
+kbl <- read.csv(file = "C:/Users/Wesley/Desktop/Table-of-variables.csv")
+```
+
+
+###**壹、資料名稱與來源**
+\
+* **資料名稱：**Fuel Economy Data 
+\
+* **資料來源：**https://catalog.data.gov/dataset/fuel-economy-data?fbclid=IwAR18KBv7OoXeY-zyu8JAMnI2tuKJqtT9AQHDm3YKeEaKZNp8u8gxQzFA6WA
+
+###**貳、資料原始研究目的與問題**
+\
+* **資料背景：**燃油經濟性數據是在Ann Arbor, Michigan環境保護局的國家車輛和燃料排放實驗室進行的車輛測試以及由EPA(美國國家環境保護局)監督的車輛製造商的結果。 
+\
+* **原始目的：**觀察型資料收集各車輛之數據並儲存於政府網站中。
+
+###**參、資料變數**
+\
+* **原始資料：**本報告的原始資料共有83個變數。然而原始資料為一個混亂的資料集( Messy Data )，因為資料中出現部分欄的變數與我們所要研究的反應變數無關，且許多變數遺失值過高，這使得我們無法精確的區分變量以及觀察值的關聯，因此我們決定初步的整理變數資料使其成為整齊的資料集( Tidy Data )。  
+\
+* **變數說明：**整理後的資料集共有34個變數，包含25個連續型變數和9個類別變數，表1為各變數的說明。
+
+\newpage  
+```{r tablevar, echo = F}
+knitr::kable(
+  kbl[1:17,],
+  caption = "表1. Table of Variables"
+) %>%
+  kable_styling()
+```
+
+###**肆、研究問題**
+\
+* **Prediction:**希望藉由本資料去預測youSaveSpend(5年省下的油錢)變數。 
+
+
+
